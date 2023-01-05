@@ -136,7 +136,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
     'Shop_Teki/static'
 ]
-
+CSRF_TRUSTED_ORIGINS = ['https://shopteki-production.up.railway.app']
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 # Default primary key field type
