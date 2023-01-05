@@ -23,7 +23,7 @@ import os
 SECRET_KEY = 'django-insecure-e0+nqv*2txmw2af&4$za@k57l=)r5f_bc#9ej%)t@w#8vx9m=u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['shopteki-production.up.railway.app']
 
