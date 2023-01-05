@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- ========================= SECTION CONTENT ========================= -->
+<section class="section-conten padding-y bg">
+    <div class="container">
+        {% include "includes/alerts.html" %}
+        <div class="row">
+            <aside class="col-md-3">
+                <!--   SIDEBAR   -->
+                <ul class="list-group" >
+                    <a class="list-group-item active" style="background-color: rgb(34, 40, 40); color: bisque; border: black;" href="#"> My order history </a>
+                    <a class="list-group-item" style="background-color: rgb(34, 40, 40); color: bisque; border: black;" href="#"> Transactions </a>
+                    <a class="list-group-item" style="background-color: rgb(34, 40, 40); color: bisque; border: black;" href="#"> Return and refunds </a>
+                    <a class="list-group-item" style="background-color: rgb(34, 40, 40); color: bisque; border: black;" href="#">Settings </a>
+                    <a class="list-group-item" style="background-color: rgb(34, 40, 40); color: bisque; border: black;" href="#"> My Selling Items </a>
+                    <a class="list-group-item" style="background-color: rgb(34, 40, 40); color: bisque; border: black;" href="#"> Received orders </a>
+                </ul>
+                <br>
+                <a class="btn btn-light btn-block" style="background-color: rgb(234, 243, 243); color: rgb(247, 30, 30); border: rgb(254, 254, 254);" href="{% url 'logout' %}"> <i class="fa fa-power-off"></i> <span class="text">Log
+                        out</span> </a>
+                <!--   SIDEBAR .//END   -->
+            </aside>
+            <main class="col-md-9">
+                <article class="card">
+                    <header class="card-header">
+                        <strong class="d-inline-block mr-3">Customer ID: 0799845998</strong>
+                        <span>Order Date: 05 Januraly 2023</span>
+                    </header>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h6 class="text-muted">Delivery to</h6>
+                                <p>Vy Nguyễn <br>
+                                    Phone +84799845998 Email: hoaivy.hailam@gmail.com <br>
+                                    Location: 217 ô1, Tổ 1, Đường Nguyễn Tất Thành, Khu Phố Hải Bình, Long Hải Long Điền Bà Rịa Vũng Tàu Việt Nam <br>
+                                </p>
+                            </div>
+                      
+                        </div> <!-- row.// -->
+                    </div> <!-- card-body .// -->
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <tr>
+                                <td width="65px">
+                                    <img style="height: 50px; width: 50px;" src="{% static './images/daychuyenkimcuong.png' %}">
+                                </td>
+                                <td>
+                                    <p class="title mb-0">Dây Chuyền Kim Cương </p>
+                                    <var class="price text-muted">USD 6000</var>
+                                </td>
+                                <td> Seller <br> Kiet Nguyen </td>
+                                <td width="250"> <a href="#" class="btn btn-outline-primary" style="background-color: rgb(34, 40, 40); color: bisque; border: black;">Track order</a> <a href="#"
+                                        class="btn btn-light"> Details </a> </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img style="height: 50px; width: 50px;" src="{% static './images/nhankimcuong.jpg' %}">
+                                </td>
+                                <td>
+                                    <p class="title mb-0">Nhẫn Kim Cương </p>
+                                    <var class="price text-muted">USD 2000</var>
+                                </td>
+                                <td> Seller <br> Kiet Nguyen </td>
+                                <td> <a href="#" class="btn btn-outline-primary" style="background-color: rgb(34, 40, 40); color: bisque; border: black;">Track order</a> <a href="#"
+                                        class="btn btn-light"> Details </a> </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img style="height: 50px; width: 50px;" src="{% static './images/lactaykimcuong.png' %}">
+                                </td>
+                                <td>
+                                    <p class="title mb-0">Lắc Tay Kim Cương </p>
+                                    <var class="price text-muted">USD 9000</var>
+                                </td>
+                                <td> Seller <br>Kiet Nguyen </td>
+                                <td> <a href="#" class="btn btn-outline-primary" style="background-color: rgb(34, 40, 40); color: bisque; border: black;">Track order</a> <a href="#"
+                                        class="btn btn-light"> Details </a> </td>
+                            </tr>
+                        </table>
+                    </div> <!-- table-responsive .end// -->
+                </article> <!-- order-group.// -->
+            </main>
+        </div> <!-- row.// -->
+    </div>
+
+
+</section>
+<!-- ========================= SECTION CONTENT END// ========================= -->
+{% endblock %}
